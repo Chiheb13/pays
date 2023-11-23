@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX1 JS</title>
+    <link rel="stylesheet" href="../CSS/StyleIntroJs.css">
+    <script src="../JS/music.js"></script>
+</head>
+<body>
+    <p><span class="Titre">Votre musique préférée est le :</span></p>
+    <form  name="musique">
+        <select name="choix" onchange="Freferr(document.musique.choix.selectedIndex)">
+            <option  value="nj">Choisissez</option>
+            <option  value="classique">classique</option>
+            <option  value="jazz">jazz</option>
+            <option value="rock">rock</option>
+            <option value="pop">pop</option>
+
+        </select>
+        <a class="nav-link px-2 text-white btn btn-primary btn-block" href="?logout" >Déconnexion</a>
+    </form>
+    
+</body>
+</html>
+<li> <?php echo "<a href='mescoach.php ? id=$row[id]' class='nav-link px-2 text-white' id='coacher'>my coach</a>"?></li>
+<li> <?php echo "<a href='messport.php ? id=$row[id]' class='nav-link px-2 text-white' id='sporter'>my sport</a>"?></li>

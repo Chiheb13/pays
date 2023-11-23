@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/calcul.css">
+    <script src="../js/calculjs.js"></script>
+</head>
+<body>
+    <div class="division">
+    <input type="text" name="affichage" id="display" class="texting" ><br><br>
+    <input type="button" value="0" onclick="calcul(0)" class="button">
+    <input type="button" value="1" onclick="calcul(1)" class="button">
+    <input type="button" value="2"onclick="calcul(2)" class="button">
+    <input type="button" value="3" onclick="calcul(3)" class="button">
+    <input type="button" value="4" onclick="calcul(4)" class="button">
+    <input type="button" value="5" onclick="calcul(5)" class="button"><br><br>
+    <input type="button" value="6" onclick="calcul(6)" class="button">
+    <input type="button" value="7" onclick="calcul(7)" class="button">
+    <input type="button" value="8" onclick="calcul(8)" class="button">
+    <input type="button" value="9" onclick="calcul(9)" class="button">
+    <input type="button" value="9" onclick="calcul(9)" class="button">
+    <input type="button" value="x²" onclick="carre()" class="button"><br><br>
+    <input type="button" value="x³ " onclick="troie()" class="button">
+    <input type="button" value="x^n" class="button" onclick="puissance()">
+    <input type="button" value="^"  class="button">
+    <input type="button" value="DEL" onclick="resume()" class="button" >
+    <input type="button" value="="  onclick="calculatrice()" class="button" ><br><br>
+<div>
+    <input type="button" id="plus" onclick="calcul('+')" value="+" class="button" >
+    <input type="button" id="moin" onclick="calcul('-')" value="-" class="button">
+    <input type="button" id="foix" onclick="calcul('*')" value="*" class="button">
+    <input type="button" id="qs" onclick="calcul('/')" value="/" class="button">
+    </div></div>
+</body>
+</html>

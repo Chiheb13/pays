@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action=""name="f">
+        9ahwa <label>quantite</label><input type="text" name="qtn1"><input type="text" name="prix1"  value="4000"> <br><br>
+        
+        jus <input type="text" value="3500" name="prix2" ></label><label>quantite</label><input type="text" name="qtn2"><br><br><p id="texte"></p>
+        <input type="button" value="ok" onclick="somme()">
+    </form>
+    <script>
+        function somme(){
+            x=f.prix1.value;
+            y=f.prix2.value;
+            qt=f.qtn1.value;
+            qt2=f.qtn2.value;
+            calcul=(Number(x)*Number(qt))+(Number(y)*Number(qt2));
+            document.getElementById('texte').innerHTML="votre prix totale est " + calcul;
+
+        }
+    </script>
+</body>
+</html>

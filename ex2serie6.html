@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mail</title>
+    <link rel="stylesheet" href="../css/styleMail.css"/>
+</head>
+<body>
+      <h1 class="titre">  Formulaire D'inscription</h1>
+      <div class="centrer">
+      <img 
+        src="../images/lire.jpg" alt="lire"  id="lire"/>
+      </div>
+    <form method="post" name="contact" action="mail.php" class="image">
+
+     <fieldset>
+        <legend>Vos cordonnées</legend>
+        <p> <label for="nom"> Nom</label>
+            <input type="text" name="nom" placeholder="votre nom" id="nom" required autofocus/></p>
+        <p><label for="prenom"> prenom </label>
+            <input type="text" name="prenom" id="prenom" required/></p>
+        <p><label for="email"> Email</label>
+            <input type="email" name="email" id="email" required/> </p>
+     </fieldset>
+ <fieldset>
+   <legend>Vos choix</legend> 
+
+    <p class="format">Urgent<br />
+     <input type="radio" name="urgent" value="oui" id="oui">
+     <label for="oui">oui</label><br />
+     <input type="radio" name="urgent" value="non" id="non" > 
+    <label for="non"> non</label>
+    </p>
+
+<p class="format">comptetences <br />
+<input type="checkbox" name="comptetences" value="HTML" id="HTML"/> 
+<label for="HTML">HTML</label><br />
+<input type="checkbox" name="comptetences" value="JavaScript" id="JAVASCRIPT" /> 
+<label for="JAVASCRIPT">JAVASCRIPT</label><br />
+<input type="checkbox" name="comptetences" value="CSS" id="CSS" /> 
+<label for="CSS">CSS</label><br />
+<input type="checkbox" name="comptetences" value="PHP" id="PHP" /> 
+<label for="PHP">PHP</label><br />
+<input type="checkbox" name="comptetences" value="XML" id="XML" /> 
+<label for="XML">XML</label>
+</p>
+
+    <P class="format">langaes de formation<br />
+    <select name="langue" size="3" multiple>
+    <option value="Arabe"> Arabe</option>
+    <option value="Francais">Fran&ccedil;aisais</option>
+    <option value="Anglais">Anglais</option> </select></P>
+
+    <p class="format">commentaires<br />
+    <textarea name="message"> </textarea> </p>
+ </fieldset>
+
+     <p id="send" class="centrer">
+     <input type="submit" name="Envoyer" value="Envoyer" id="image-button" />
+     </p>
+</form>
+</body>
+</html>

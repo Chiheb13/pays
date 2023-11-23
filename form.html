@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr-fr">
+<head id="res">
+<meta charset="utf-8">
+<title >contact</title>
+</head>
+<body>
+<script>
+    function myfunction(){
+        document.getElementById('yes').innerHTML='chiheb yahya';
+    }
+</script>
+<h1>Formulaire avec les nouveautes HTML5</h1>
+<form name="f1_join">
+<p><label for="nom">nom:</label>
+<input id="nom" type="texte" name="nom" maxlength="20" placeholder="inser votre nom" autofocus /><br>
+NB:champ de tesxte obligatoire avec placeholder et autofocus</p>
+<p><label for="url">url:</label>
+<input id="url" type="texte" name="ur" maxlength="20"placeholder="http.//vs||dator.w3.org" required /></br>
+NB:Tous les types d'URL sont admis(ftp:// ,mailto: ,http:// ,etc,)</p>
+<p><label for="mail">Email : </label>
+<input id="mail" name="mail" type="mail" maxlength="20" placeholder="votre@dresse.fr" />
+NB:Ce champ attend au minium un caractere(caractere non accentue comprenjant les seperateurs triet les separateurs triet au underscore)suivi d'un @ suivi a son tour d'un caractere.</p>
+<p><label for="tel">tel:</label>
+<input id="tel" type="tel" name="tel" maxlength="20" placeholder="votre num de tel" pattern="[0-9]{8}"/></br>
+NB:un controle avec l'attribut paatern est necessaire.pattern="[0-9]{8}"</p>
+<p><label for="n">Age avec Format numerique:</label>
+<input id="n" type="number" name="n" min="20" max="30" placeholder="22" step="1"/></br>
+NB:Les attribut utilises:age min=20 age max=30 valeur par defaut=22 pas=1 </p>
+<p><label for="m">Moyenne:</label>
+<input id="m" type="number" name="moy" min="0" max="20" placeholder="0" step="0.25"/></br>
+NB: Les attribut utilises :moyenne min=0 moyenne max=20 valeur par defaut=0 pas=0.25 </p>
+<p><label for="da">date de naissance :</label>
+<input id="da" type="Date" name="date"  min="1990-01-01" max="2005-01-01" value="1992-01-01"/><br>
+NB: Les attribut utilises:min="1990-01-01" max="2005-01-01" value="1992-01-01"</p>
+<label for="h">Heure de naissance:</label>
+<input id="h" type="time" name="h"></br>
+<p><label for="couleur preferer">couleur preferer:</label>
+<input type="color" name="co" value="#ff000" /></br>
+NB:value="#ff0000"</p>
+<label for="sal">Nouveau en Dev Web(0,5) slider:</label>
+<input type="range" name="range" id="slider" min="0" max="5" step="1" value="0" onChange="showValue(this.value)" />
+<span id="range">0</span>
+</br>
+<script>
+    function love(){
+        document.getElementById('')
+    }
+</script>
+<script type="text/javascript">
+function showValue(newValue)
+{
+    document.getElementById("range").innerHTML=newValue;
+}
+</script>
+<script>
+    function name(hellochiheb){
+        document.getElementById("res").innerHTML=hellochiheb;
+    }
+</script>
+<script>
+    window.alert('hellochiheb')
+</script>
+<button type="button" onclick="window.print()">print this page</button>
+<p><input id="ok" type="submit" value="Somettre le formulaire"/></p>
+<p id="yes" >yes we can</p>
+<button type="button" onclick="myfunction()">click</button>
+</form>
+</body>
+</html>

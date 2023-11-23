@@ -1,0 +1,49 @@
+.titre{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    background: url("../images/eau.jpg");
+    text-align: center;
+    border: thin solid #006666;
+    letter-spacing: 10pt;
+}
+body{
+    
+    background-image: url("../images/mail.jpg");
+    background-repeat: repeat-y;
+    width: 70%;
+    margin: auto;
+}
+.format{
+    color: #003366;
+    text-decoration: overline underline;
+}
+#image{
+    background-image: url("../images/enveloppe.png") no-repeat top left;
+    caption-side: bottom left;
+    padding-left: 30px;
+    height: 30px;
+    background-color: #002D40;
+    color: white;
+    border: inset 2px grey;
+    border-radius: 5px;
+}
+p{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 40px;
+    margin-right: 20px;
+
+
+}
+#send{
+    display: block;
+}
+#lire{
+    box-shadow: 5px 10px 10px #006666;
+}
+.center{
+    text-align: center;
+}

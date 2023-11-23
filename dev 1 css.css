@@ -1,0 +1,21 @@
+body{
+    background-image: url("../images/background.png");
+    font-family: 'belleza';
+    color: #181818;
+    font-size: 16px;
+    width: 70%;
+    margin: auto;
+}
+h1,h2{
+    font-family: 'pacifico';
+    color: #2c5783;
+}
+p{
+    text-align: justify;
+
+}
+#titreprincipal{
+    vertical-align: top;
+    margin-left: 20px;
+    display: inline-block;
+}

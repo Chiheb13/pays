@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>formulaire nouveaute</title>
+        </head>
+        <body>
+            <form>
+                <p><h1>formulaire avec nouveautes HTML5</h1></p>
+                <p><label for="name">Nom:</label><input type="name" id="name" placeholder="inserer votre texte ici" required ></p>
+                <p>NB:champ de text obligatoire avec placeholder et autofocus</p>
+                <p><label for="url">Url:</label><input type="text" id="url" maxlength="20" placeholder="http.//validator.wc3.org"  required></p>
+                <p>NB:tous les types d'Url sont admis(ftp://,mailto:,https://,etc</p>
+                <p><label for="email">Email</label><input type="email" id="email" placeholder="votre@mail"  required></p>
+                <p>NB:NB:Ce champ attend au minium un caractere(caractere non accentue comprenjant les seperateurs triet les separateurs triet au underscore)suivi d'un @ suivi a son tour d'un caractere</p>
+                <p><label for="tel">tel</label><input type="tel" id="tel" placeholder="votre um de tel"  pattern="[0-9] {8}"  required ></p>
+                <p>NB:un controle avec l'attribut paatern est necessaire.pattern="[0-9]{8}"</p>
+                <p><label for="age">age avec format numerique</label><input type="number" id="age" max="30" min="20" placeholder="22" step="1" ></p>
+                <p>NB:Les attribut utilises:age min=20 age max=30 valeur par defaut=22 pas=1</p>
+                <p><label for="moy">moyenne</label><input type="number" min="0" max="20" placeholder="0" step="0.25" required></p>
+                <p>NB: Les attribut utilises :moyenne min=0 moyenne max=20 valeur par defaut=0 pas=0.25 </p>
+                <p><label for="date de naiss">date de naissance</label><input type="date" min="1990-01-01" max="2000-01-01" value="1992-01-01" id="date de naiss"></p>
+                <p>NB: Les attribut utilises:min="1990-01-01" max="2005-01-01" value="1992-01-01</p>
+                <p><label for="temp">heure de naissance</label><input type="time" id="temp" ></p>
+                <p><label for="colr">choix de coleur</label><input type="color" value="#ff0000"> </p>
+                <p>NB:value="#ff0000"</p>
+                <p><label for="dev">niveau de DEV Web(0,5)slider</label><input type="range" id="slider" name="range" min="0" max="5" step="1" value="0" onChange="showValue(this.value)">
+                <span id="range">0</span></p>
+                <script type="text/javascript">function showValue(newValue){document.getElementById("range").innerHTML=newValue;}</script>
+                <p><input id="ok" type="submit" value="Somettre le formulaire"/></p>
+
+
+            </form>
+        </body>
+        </html>
+        

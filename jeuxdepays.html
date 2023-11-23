@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jeux</title>
+    <script src="../js/jsjeux.js"></script>
+    <link rel="stylesheet" href="../css/jeuxstyle.css">
+</head>
+<body>
+    <div id="stan">
+    <h2 >jeu de pays en "stan"</h2></div>
+    
+    
+    <form method="get" name="jeux">
+        <table id="texte"><tr>
+    <td>
+            
+    <label for="1">1-</label><input  type="text" list="game" placeholder="...." id="1" name="selc1" onchange="test()"><br>
+    <label for="2">2-</label><input type="text"list="game" placeholder="...." id="2" name="selc2" onchange="test()" ><br>
+    <label for="3">3-</label><input type="text" list="game" placeholder="...." id="3" name="selc3" onchange="test()"><br>
+    <label for="4">4-</label><input type="text" list="game" placeholder="...." id="4" name="selc4" onchange="test()"><br>
+    <label for="5">5-</label><input type="text" list="game" placeholder="...." id="5" name="selc5"onchange="test()" ><br>
+    <label for="6">6-</label><input type="text" list="game" placeholder="...." id="6" name="selc6" onchange="test()"><br>
+    <label for="7">7-</label><input type="text" list="game" placeholder="...." id="7" name="selc7" onchange="test()" ><br></td>
+    <td><img src="../images/carte.png" alt="carte des pys" name="pays" class="images" ></td></tr></table>
+
+    <datalist id="game" name="data">
+        <option value="....">....</option>
+        <option value="Afghanistan">Afghanistan</option>
+        <option value="Azerbaïdjan">Azerbaïdjan</option>
+        <option value="Kirghzistan">Kirghzistan</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="Tadjikistan">Tadjikistan</option>
+        <option value="Turkmenistan">Turkmenistan</option>
+        <option value="Ousbékistan">Ousbékistan</option>
+    </datalist>
+    <div id="boutons">
+    <input id="btn1" value="valider" type="button" onclick="verif()">
+    <input id="btn2" type="button" onclick="rejouer()"  value="reset">
+    </form>
+</body>
+</html>

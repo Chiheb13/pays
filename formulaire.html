@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>formulaire</title>
+        </head>
+        <body>
+                <h2>exemple de formulaire de contact</h2>
+                <h3>quel type de message voulez-vous envoyer</h3>
+                <form>
+                    <input type="radio" value="infos" name="a" id="information"><label>information</label>
+                    <input type="radio" value="aide" name="a" id="aide"><label>aide</label>
+                    <input type="radio" value="suggestion" name="a" id="suggestion"><label>suggestion</label>
+                    <input type="radio" name="a"><label>remeciements</label>
+                    <h2>quel est l'objet de votre envoi?</h2>
+                    <select name="entreprise"id="entreprise">
+                        <option>entreprise</option>
+                        <option>produit</option>
+                        <option>fournitures</option>
+                        <option>employe</option>
+                        <option>autre</option>
+
+                    </select>
+                    <h2>tapez vos commentaires dans l'espace ci-dessous:</h2>
+                    <textarea rows="4" cols="75"></textarea>
+                    <fieldset>
+                        <legend>vos coordonnées</legend>
+                        
+                        <h3>indiquez vos coordonéees:</h3>
+                        <table>
+                            <tr>
+                            <td><p>
+                        <label for="nom">nom:</label></p></td>
+                        <td>
+                            <input type="text" id="nom" placeholder="votre nom" required>
+                            </td>
+                            <tr><td><p>
+                        <label for="msg">adresse de messagerie:</label></td><td><input type="email" id="msg" placeholder="votre email"></p></td>
+                        </tr>
+                        </table>
+                        
+
+
+
+                    </fieldset>
+                    <label>veiller me contactez dés que possible..</label><input type="checkbox"><br/>
+                    <input type="submit" value="envoyez les information">
+                    <input type="submit" value="effacez le contenu du formulaire">
+
+                                    </form>
+            
+        </body>

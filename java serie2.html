@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styleintrojs.css">
+    <script src="../js/controler.js" ></script>                                                             
+</head>
+<body>
+    <p onmousedown="mouseDown(this)"  onmouseup="mouseUp(this)">ajout d'un nouveau nombre</p>
+    <form action="form.php" method="get" name="formajout">
+        <label for="name">nom: </label><input type="text" name="nom" onblur="majuscule(this)"><br><br>
+        <label for="prenom">prenom:  </label><input type="text" name="prenom"><br><br>
+        <label for="mdp">mot secret: </label><input type="password" name="psw" onfocus="coloration(this)"><br><br>
+        <label for="niveayu">niveau: </label><br>
+        <select name="niveau">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3" selected>3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select><br>
+        <label for="dicipline">dicipline</label>
+        <select multiple size="3">
+            <option value="LFIG">LFIG</option>
+            <option value="LACE">LAGE</option>
+            <option value="LATSI">LATSI</option>
+        </select><br><br>
+        <label for="email">email </label><input type="text" name="mail"><br><br>
+        <input type="button" value="valider" name="valid" onclick="controle(document.formajout)"><br><br><br>
+        <input type="reset" value="retablir" name="reatb"><br>
+
+    </form>
+</body>
+</html>

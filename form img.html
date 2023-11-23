@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/design.css">
+        <title>formulaire</title>
+        </head>
+        <body >
+            <form method="get" >
+                <h1 class="titre">formulaire d'inscription</h1>
+
+                <div class="center"> 
+                <img src="../images/lire.jpg" alt="lire" id="lire">
+                </div>
+                <fieldset>
+                    <legend>vos coordonnées</legend>
+                    <p><label for="pk">nom:</label>
+                        <input id="pk" type="text" placeholder="votre nom" required ></p>
+                        <p><label for="pr">prenom:</label>
+                        <input type="text" placeholder="votre prenom" id="pr" required ></p>
+                    
+                    <p><label for="em">email:</label><input type="email" placeholder="votre email" id="em" required></p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>vos choix</legend>
+                        <p><label class="format">urgent</label><br/>
+                        
+                        <input type="radio" value="oui" name="a" id="oui"><label for="oui">oui</label><br/>
+                        <input type="radio" value="non" name="a" id="non"><label for="non">Non</label><br/></p>
+                        <p><label class="format">competences</label><br/>
+                        <input type="radio" name="x" id="html"><label for="html">HTML</label><br/>
+                        <input type="radio" name="x" id="js"><label for="js">JavaScript</label><br/>
+                        <input type="radio" name="x" id="css"><label for="css">CSS</label><br/>
+                        <input type="radio" name="x" id="php"><label for="php">PHP</label><br/>
+                        <input type="radio" name="a" id="xml"><label ofr="xml">XML</label><br/></p>
+                        <p><label class="format">langues de formation</label><br/>
+                        <select name="langue"id="langue" size="4" multiple >
+                            <option value="arabe">arabe</option>
+                            <option value="france">france</option>
+                            <option value="anglais">anglais</option>
+                            <option value="italien">italien</option>
+                            <option value="autre">autre</option>
+
+                            </select></p><br/>
+                            <p class="format">commentaire<br>
+                            <textarea rows="3" cols="30"></textarea></p>
+                        </fieldset>
+                    <br/>
+                    <p id="send" ><input type="submit"  value="envoyer" id="image"></p>
+                    
+            </form>
+        </body>
+        </html>
+        
+       
